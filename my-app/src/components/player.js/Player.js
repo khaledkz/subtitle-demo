@@ -3,17 +3,19 @@ import React, { Component } from 'react';
 
 class Welcome extends Component {
   render() {
-    // "http://bcboltstv-a.akamaihd.net/media/v1/pmp4/static/clear/1486976045/f44e8fe0-7900-44d9-84a6-decf7d83edf8/high.mp4"
-    // https://files.stvqa.tv/player/subtitles/emmerdale-emmerdale-ep-1352019-23413.subs.vtt
+    // cornation street 08 May
+    // https://files.stvqa.tv/player/subtitles/coronation-street-20190508-2030.subs.vtt
+    // https://files.stvqa.tv/player/subtitles/coronation-street-20190508-1930.subs.vtt
+
+    // "http://bcboltstv-a.akamaihd.net/media/v1/pmp4/static/clear/1486976045/2f01f4af-b73f-486a-a372-c85c8950fed4/high.mp4"
+
     return (
       <figure id="videoContainer">
-        <video id="video" controls preload="metadata" poster="img/poster.jpg">
-          <source src="http://bcboltstv-a.akamaihd.net/media/v1/pmp4/static/clear/1486976045/f44e8fe0-7900-44d9-84a6-decf7d83edf8/high.mp4" type="video/mp4" />
-          <track id="subtitleTrack" kind="subtitles" label="English subtitles" src="https://files.stvqa.tv/player/subtitles/emmerdale-emmerdale-ep-1352019-23413.subs.vtt" srclang="en" default>
+        <video id="video" controls preload="metadata" crossorigin="anonymous">
+          <source src="http://bcboltstv-a.akamaihd.net/media/v1/pmp4/static/clear/1486976045/2f01f4af-b73f-486a-a372-c85c8950fed4/high.mp4" type="video/mp4" />
+          <track id="subtitleTrack" kind="subtitles" label="English subtitles" src="https://files.stvqa.tv/player/subtitles/coronation-street-20190508-2030.subs.vtt" srclang="en" default>
           </track>
-          <track id="subtitleTrack" kind="subtitles" label="Arabic subtitles" src="https://files.stvqa.tv/player/subtitles/emmerdale-emmerdale-ep-1352019-23413.subs.vtt" srclang="ar" default>
-          </track>
-          <track id="subtitleTrack" kind="subtitles" label="France subtitles" src="https://files.stvqa.tv/player/subtitles/emmerdale-emmerdale-ep-1352019-23413.subs.vtt" srclang="fr" default>
+          <track id="subtitleTrack" kind="subtitles" label="English UK subtitles" src="https://files.stvqa.tv/player/subtitles/coronation-street-20190508-1930.subs.vtt" srclang="en-uk" default>
           </track>
           </video>
       </figure>
