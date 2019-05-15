@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 
 class Welcome extends Component {
-  // componentDidMount(){
-  //   this.video.play();
-  // }
-
   componentDidMount(){
     document.addEventListener('keydown', e => {
       if (e.keyCode === 13 && this.video.paused) {
