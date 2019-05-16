@@ -1,2 +1,2 @@
 # subtitle-demo
-Implementing simple player app ( video & Subtitle )
+Implementing simple player app (video & Subtitle)
