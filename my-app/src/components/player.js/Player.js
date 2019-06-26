@@ -26,7 +26,7 @@ class Welcome extends Component {
 
     return (
       <figure id="videoContainer">
-        <video id="video" controls preload="metadata" onloadedmeta='this.play()'crossorigin="anonymous" ref={event=>{this.video = event}} preload="auto">
+        <video id="video" controls preload="metadata" crossorigin="anonymous" ref={event=>{this.video = event}} preload="auto">
           <source src={mp4VideoTwo} type="video/mp4" />
           <track id="subtitleTrack" kind="subtitles" label="English subtitles" src={vttSubtitleTwo} srclang="en" default>
           </track>
